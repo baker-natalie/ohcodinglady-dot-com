@@ -1,0 +1,259 @@
+body {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	background-color: #91204d;
+	color: #e2f7ce;
+	margin: 0;
+}
+main {
+	position: absolute;
+	top: 120px;
+	width: 100%;
+}
+h1,
+h2 {
+	font-family: 'Cherry Swash', serif;
+	text-align: center;
+	width: 100%;
+}
+h1 {
+	color: #3b212b;
+	font-size: 4em;
+}
+h2 {
+	font-size: 2.5em;
+}
+h3 {
+	text-transform: uppercase;
+	text-align: center;
+	color: #e2f7ce;
+	font-size: 1.5em;
+	width: 100%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: inline;
+}
+a:link,
+a:hover,
+a:focus,
+a:active,
+a:visited {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #3b212b;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: #e8c24f;
+}
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 120px;
+	text-align: center;
+	background-image: url(images/background.png);
+	background-color: #e2f7ce;
+	background-size: cover;
+	background-position: right;
+	border-bottom: 4px solid #3b212b;
+}
+
+.header-text {
+	margin: 0;
+	padding: 0;
+}
+.page-link a:link {
+	min-width: 80px;
+	font-size: 1.8em;
+	font-weight: 400;
+	color: #91204d;
+	padding: 0 25px 0 25px;
+}
+.welcome {
+	width: 800px;
+	height: 400px;
+	max-width: 100%;
+	max-height: 50%;
+	margin: 0 auto 0 auto;
+	background-image: url('images/welcome.png');
+	background-position: left;
+	background-size: contain;
+}
+.welcome h1 {
+	width: 800px;
+	max-width: 100%;
+	font-size: 4.5em;
+	text-align: center;
+	margin-top: 16vh;
+	color: #e2f7ce;
+   -webkit-text-fill-color: #e2f7ce;
+   -webkit-text-stroke-width: 3px;
+   -webkit-text-stroke-color: #3b212b;
+}
+.welcome p {
+	position: relative;
+	width: 150px;
+	font-size: 2em;
+	top: 18vh;
+	margin-left: calc(50% - 75px);
+}
+.main-nav {
+	width: 800px;
+	max-width: 100%;
+	margin: 20px auto 20px auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+.main-link {
+	font-size: 3em;
+	text-align: right;
+	color: #3b212b;
+	font-weight: 400;
+	width: 28%;
+	margin-left: 8%;
+	background-size: cover;
+	background-position: right;
+}
+.main-link:first-child {
+	margin-left: 0;
+}
+.main-link div {
+	padding: 5px;
+}
+.main-nav a:active,
+.main-nav a:hover,
+.main-nav a:focus {
+	color: #3b212b;
+	cursor: pointer;
+}
+.portfolio {
+	list-style-type: none;
+	padding: 0;
+	width: 800px;
+	max-width: 100%;
+	margin: 0 auto 20px auto;
+	background-color: #3b212b;
+	color: #e46e2b;
+}
+.project {
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	border-bottom: 4px solid #91204d;
+}
+.project:nth-child(4) {
+	border: 0;
+}
+.portfolio-img,
+.info {
+	width: 41%;
+	height: 41%;
+}
+.portfolio-img {
+	margin: 0 3% 0 6%;
+}
+.info {
+	margin: 0 6% 0 3%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.info a:link {
+	color: #e2f7ce;
+}
+.info a:visited {
+	color: #e46e2b;
+}
+.info a:hover,
+.info a:focus,
+.info a:active {
+	color: #e8c24f;
+}
+.demo,
+.code {
+	width: 50%;
+	text-align: center;
+	text-decoration: underline;
+}
+.blog-posts {
+	width: 1000px;
+	max-width: 100%;
+	margin: 20px auto 20px auto;
+	font-weight: 300;
+	background-color: #e2f7ce;
+	color: #3b212b;
+	text-align: center;
+}
+.contacts {
+	width: 600px;
+	height: 100px;
+	max-width: 100%;
+	margin: 20px auto 20px auto;
+	background-color: #e8c24f;
+}
+.contacts-list {
+	text-align: center;
+	line-height: 100px;
+}
+.contacts-list a:link,
+.contacts-list a:hover,
+.contacts-list a:focus,
+.contacts-list a:active,
+.contacts-list a:visited {
+	color: #e8c24f;
+}
+.contact {
+	height: 50px;
+	width: 50px;
+	font-size: 35px;
+	margin: 3%;
+	border-radius: 100%;
+	background-color: #3b212b;
+}
+.contact a {
+	padding: 2%;
+}
+footer {
+	text-align: center;
+	border-top: 2px solid #3b212b;
+	bottom: 0;
+}
+@media screen and (max-width: 600px) {
+    .header-text {
+    	font-size: 2em;
+    }
+    .main-link {
+    	font-size: 18px;
+    	text-align: center;
+    }
+    main,
+    .welcome,
+    .main-nav,
+    .portfolio,
+    .portfolio-img,
+    .info {
+        width: 100%;
+    }
+    main {
+    	padding: 0;
+    	margin: 0;
+    }
+    .portfolio-img {
+    	margin-left: 0;
+    	margin-right: 0;
+    }
+    .demo,
+    .code {
+    	width: 50%;
+    }
+}
